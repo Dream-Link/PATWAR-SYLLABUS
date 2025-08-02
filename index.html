@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSSB पटवार 2025: इन्फोग्राफिक पाठ्यक्रम</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Tiro+Devanagari+Hindi:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', 'Tiro Devanagari Hindi', sans-serif;
+            background-color: #F0F8FF;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .flowchart-step {
+            border: 2px solid #4682B4;
+            background-color: #FFFFFF;
+            color: #002366;
+        }
+        .flowchart-arrow {
+            color: #4682B4;
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="bg-[#F0F8FF] text-[#002366]">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#002366] mb-2">RSSB पटवार भर्ती परीक्षा 2025</h1>
+            <p class="text-xl text-[#1E90FF]">एक दृष्टि में संपूर्ण पाठ्यक्रम और परीक्षा योजना</p>
+        </header>
+
+        <main>
+            <section id="overview" class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-8">परीक्षा का समग्र अवलोकन</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <p class="text-6xl font-bold text-[#007FFF]">150</p>
+                        <p class="text-xl mt-2">कुल प्रश्न</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <p class="text-6xl font-bold text-[#007FFF]">300</p>
+                        <p class="text-xl mt-2">कुल अंक</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <p class="text-6xl font-bold text-[#007FFF]">3</p>
+                        <p class="text-xl mt-2">घंटे की अवधि</p>
+                    </div>
+                </div>
+                <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mt-8 rounded-lg shadow-md">
+                    <p class="font-bold text-xl">⚠️ महत्वपूर्ण सूचना: नकारात्मक अंकन</p>
+                    <p>प्रत्येक गलत उत्तर के लिए 1/3 अंक काटा जाएगा। सटीकता अत्यंत महत्वपूर्ण है!</p>
+                </div>
+            </section>
+
+            <section id="marks-table" class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-8">परीक्षा योजना: अंक वितरण सारणी</h2>
+                <div class="bg-white rounded-lg shadow-lg p-6 overflow-x-auto">
+                    <table class="w-full text-sm text-left text-[#002366]">
+                        <thead class="text-xs text-[#007FFF] uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">विषय</th>
+                                <th scope="col" class="px-6 py-3 text-center">प्रश्नों की संख्या</th>
+                                <th scope="col" class="px-6 py-3 text-center">कुल अंक</th>
+                                <th scope="col" class="px-6 py-3 text-center">अनुमानित भारांक</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="bg-white hover:bg-gray-50">
+                                <td class="px-6 py-4 font-medium">सामान्य विज्ञान; भारत का इतिहास, राजनीति व भूगोल; सामान्य ज्ञान, समसामयिक मामले</td>
+                                <td class="px-6 py-4 text-center">38</td>
+                                <td class="px-6 py-4 text-center">76</td>
+                                <td class="px-6 py-4 text-center">~25%</td>
+                            </tr>
+                            <tr class="bg-white hover:bg-gray-50">
+                                <td class="px-6 py-4 font-medium">राजस्थान का भूगोल, इतिहास, संस्कृति और राजनीति</td>
+                                <td class="px-6 py-4 text-center">30</td>
+                                <td class="px-6 py-4 text-center">60</td>
+                                <td class="px-6 py-4 text-center">~20%</td>
+                            </tr>
+                            <tr class="bg-white hover:bg-gray-50">
+                                <td class="px-6 py-4 font-medium">सामान्य अंग्रेजी एवं हिंदी</td>
+                                <td class="px-6 py-4 text-center">22</td>
+                                <td class="px-6 py-4 text-center">44</td>
+                                <td class="px-6 py-4 text-center">~15%</td>
+                            </tr>
+                            <tr class="bg-white hover:bg-gray-50">
+                                <td class="px-6 py-4 font-medium">मानसिक योग्यता एवं तर्कशक्ति, बुनियादी संख्यात्मक दक्षता</td>
+                                <td class="px-6 py-4 text-center">45</td>
+                                <td class="px-6 py-4 text-center">90</td>
+                                <td class="px-6 py-4 text-center">~30%</td>
+                            </tr>
+                            <tr class="bg-white hover:bg-gray-50">
+                                <td class="px-6 py-4 font-medium">बेसिक कंप्यूटर</td>
+                                <td class="px-6 py-4 text-center">15</td>
+                                <td class="px-6 py-4 text-center">30</td>
+                                <td class="px-6 py-4 text-center">~10%</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="font-bold bg-gray-100">
+                             <tr class="text-[#002366]">
+                                <td class="px-6 py-4 text-lg">कुल</td>
+                                <td class="px-6 py-4 text-center text-lg">150</td>
+                                <td class="px-6 py-4 text-center text-lg">300</td>
+                                <td class="px-6 py-4 text-center text-lg">100%</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <section id="weightage" class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-4">विषय-वार भारांक वितरण (चार्ट)</h2>
+                <p class="text-center text-lg text-[#4682B4] mb-8">अपनी तैयारी को प्राथमिकता दें! जानें कि कौन सा विषय सबसे अधिक महत्वपूर्ण है।</p>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="chart-container">
+                        <canvas id="weightageChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="syllabus" class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-8">विस्तृत पाठ्यक्रम: विषय-अनुसार</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center"><span class="text-3xl mr-3">🧠</span>मानसिक योग्यता एवं तर्कशक्ति</h3>
+                        <p class="text-sm text-[#4682B4] mb-4">भारांक: ~30% (45 प्रश्न)</p>
+                        <ul class="list-disc list-inside space-y-2 flex-grow text-sm">
+                            <li>श्रृंखला/सादृश्य बनाना</li>
+                            <li>आकृति मैट्रिक्स प्रश्न, वर्गीकरण</li>
+                            <li>वर्णमाला परीक्षण</li>
+                            <li>गद्यांश और निष्कर्ष</li>
+                            <li>रक्त संबंध, कोडिंग-डिकोडिंग</li>
+                            <li>दिशा ज्ञान परीक्षण, बैठक व्यवस्था</li>
+                            <li>इनपुट-आउटपुट, संख्या रैंकिंग और समय वर्ग</li>
+                            <li>निर्णय लेना</li>
+                            <li>शब्दों का तार्किक क्रम</li>
+                            <li>लुप्त वर्ण/संख्या सम्मिलित करना</li>
+                            <li>गणितीय संक्रियाएं, औसत, अनुपात</li>
+                            <li>क्षेत्रफल और आयतन</li>
+                            <li>प्रतिशत, साधारण और चक्रवृद्धि ब्याज</li>
+                            <li>ऐकिक नियम, लाभ और हानि</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center"><span class="text-3xl mr-3">🔬</span>सामान्य ज्ञान एवं विज्ञान (भारत)</h3>
+                        <p class="text-sm text-[#4682B4] mb-4">भारांक: ~25% (38 प्रश्न)</p>
+                        <ul class="list-disc list-inside space-y-2 flex-grow text-sm">
+                            <li>विज्ञान के सामान्य आधारभूत तत्व एवं दैनिक विज्ञान, मानव शरीर, आहार एवं पोषण, स्वास्थ्य देखभाल</li>
+                            <li>प्राचीन एवं मध्यकालीन भारत के इतिहास की प्रमुख विशेषताएँ एवं महत्वपूर्ण ऐतिहासिक (18वीं शताब्दी के मध्य से वर्तमान तक) घटनाएँ</li>
+                            <li>भारतीय संविधान, राजनीतिक व्यवस्था एवं शासन प्रणाली, संवैधानिक विकास</li>
+                            <li>भारत की भौगोलिक विशेषताएँ, पर्यावरणीय एवं पारिस्थितिकीय परिवर्तन एवं इनके प्रभाव</li>
+                            <li>समसामयिक राष्ट्रीय घटनायें</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center"><span class="text-3xl mr-3">🏰</span>राजस्थान का सामान्य ज्ञान</h3>
+                        <p class="text-sm text-[#4682B4] mb-4">भारांक: ~20% (30 प्रश्न)</p>
+                        <ul class="list-disc list-inside space-y-2 flex-grow text-sm">
+                            <li>राजस्थान के इतिहास की महत्वपूर्ण ऐतिहासिक घटनाएँ</li>
+                            <li>राजस्थान की प्रशासनिक व्यवस्था: राज्यपाल, राज्य विधान सभा, उच्च न्यायालय, RPSC, जिला प्रशासन, राज्य मानवाधिकार आयोग, लोकायुक्त, राज्य निर्वाचन आयोग, राज्य सूचना आयोग, लोक नीति</li>
+                            <li>सामाजिक-सांस्कृतिक मुद्दे</li>
+                            <li>स्वतन्त्रता आन्दोलन, जन-जागरण एवं राजनीतिक एकीकरण</li>
+                            <li>लोक कलाऐं, चित्रकलाऐं और हस्तशिल्प एवं स्थापत्य</li>
+                            <li>मेले, त्यौहार, लोकसंगीत एवं लोकनृत्य</li>
+                            <li>राजस्थानी संस्कृति एवं विरासत, साहित्य</li>
+                            <li>राजस्थान के धार्मिक आन्दोलन, सन्त एवं लोकदेवता</li>
+                            <li>महत्वपूर्ण पर्यटन स्थल एवं राजस्थान के प्रमुख व्यक्तित्व</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center"><span class="text-3xl mr-3">✍️</span>सामान्य अंग्रेजी एवं हिंदी</h3>
+                        <p class="text-sm text-[#4682B4] mb-4">भारांक: ~15% (22 प्रश्न)</p>
+                        <div class="flex-grow text-sm">
+                            <p class="font-bold mb-2">सामान्य हिंदी:</p>
+                            <ul class="list-disc list-inside space-y-2 mb-4">
+                                <li>संधि एवं संधि-विच्छेद</li>
+                                <li>उपसर्ग एवं प्रत्यय</li>
+                                <li>सामासिक पद की रचना व विग्रह</li>
+                                <li>शब्द युग्मों का अर्थ भेद</li>
+                                <li>पर्यायवाची और विलोम शब्द</li>
+                                <li>शब्द शुद्धि एवं वाक्य शुद्धि</li>
+                                <li>वाक्यांश के लिये एक उपयुक्त शब्द</li>
+                                <li>पारिभाषिक शब्दावली (अंग्रेजी-हिंदी)</li>
+                                <li>मुहावरे एवं लोकोक्तियाँ</li>
+                            </ul>
+                            <p class="font-bold mb-2">General English:</p>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Comprehension of unseen passages</li>
+                                <li>Correction of common errors; correct usage</li>
+                                <li>Synonyms / Antonyms</li>
+                                <li>Phrases and Idioms</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center"><span class="text-3xl mr-3">💻</span>बेसिक कंप्यूटर</h3>
+                        <p class="text-sm text-[#4682B4] mb-4">भारांक: ~10% (15 प्रश्न)</p>
+                        <ul class="list-disc list-inside space-y-2 flex-grow text-sm">
+                            <li>Characteristics of Computers</li>
+                            <li>Computer Organization including RAM, ROM, File System, Input & Output Devices</li>
+                            <li>Concept of Operating System</li>
+                            <li>MS-Office (exposure of Word, Excel/Spreadsheet, Power Point)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="strategy" class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-8">सफलता की रणनीति: एक प्रवाह</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">
+                    <div class="flowchart-step rounded-lg p-4 text-center w-60">
+                        <p class="text-5xl mb-2">1️⃣</p>
+                        <h4 class="font-bold text-lg">प्राथमिकता तय करें</h4>
+                        <p class="text-sm">उच्च भारांक वाले विषयों (तर्कशक्ति, GK) पर अधिक ध्यान दें।</p>
+                    </div>
+                    <div class="flowchart-arrow transform md:-translate-y-4 md:rotate-0 rotate-90">➔</div>
+                    <div class="flowchart-step rounded-lg p-4 text-center w-60">
+                        <p class="text-5xl mb-2">2️⃣</p>
+                        <h4 class="font-bold text-lg">समय प्रबंधन</h4>
+                        <p class="text-sm">पहले कम समय लेने वाले खंड (हिंदी, कंप्यूटर) हल करें।</p>
+                    </div>
+                    <div class="flowchart-arrow transform md:-translate-y-4 md:rotate-0 rotate-90">➔</div>
+                    <div class="flowchart-step rounded-lg p-4 text-center w-60">
+                        <p class="text-5xl mb-2">3️⃣</p>
+                        <h4 class="font-bold text-lg">सटीकता पर ध्यान</h4>
+                        <p class="text-sm">नकारात्मक अंकन से बचें। अनुमान लगाने की बजाय जिन प्रश्नों पर विश्वास हो, उन्हें ही हल करें।</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-12 pt-8 border-t-2 border-[#87CEEB]">
+            <p class="font-bold text-xl">🔗 आधिकारिक स्रोत</p>
+            <p class="my-2">हमेशा नवीनतम जानकारी और अपडेट के लिए राजस्थान कर्मचारी चयन बोर्ड (RSSB) की आधिकारिक वेबसाइट देखें।</p>
+            <a href="https://rssb.rajasthan.gov.in" target="_blank" class="text-[#007FFF] font-semibold hover:underline break-words">https://rssb.rajasthan.gov.in</a>
+            <p class="text-xs text-gray-500 mt-8">यह इन्फोग्राफिक उपलब्ध नवीनतम आधिकारिक पाठ्यक्रम पर आधारित है। अंतिम पुष्टि के लिए आधिकारिक विज्ञापन देखें।</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function wrapText(str, maxWidth) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                } else {
+                    currentLine += word + ' ';
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const ctx = document.getElementById('weightageChart').getContext('2d');
+        const weightageData = {
+            labels: [
+                wrapText('मानसिक योग्यता एवं तर्कशक्ति, बुनियादी संख्यात्मक दक्षता', 18),
+                wrapText('सामान्य विज्ञान; भारत का इतिहास, राजनीति व भूगोल; सामान्य ज्ञान, समसामयिक मामले', 18),
+                wrapText('राजस्थान का भूगोल, इतिहास, संस्कृति और राजनीति', 18),
+                'सामान्य अंग्रेजी एवं हिंदी',
+                'बेसिक कंप्यूटर'
+            ],
+            datasets: [{
+                label: 'विषय भारांक (%)',
+                data: [30, 25, 20, 15, 10],
+                backgroundColor: [
+                    '#007FFF', 
+                    '#1E90FF', 
+                    '#4682B4', 
+                    '#87CEEB', 
+                    '#B0E0E6'  
+                ],
+                borderColor: '#FFFFFF',
+                borderWidth: 3,
+                hoverOffset: 15
+            }]
+        };
+
+        const weightageChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: weightageData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#002366',
+                            font: {
+                                size: 14,
+                                family: "'Poppins', sans-serif"
+                            },
+                            padding: 20,
+                            boxWidth: 15
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            },
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            }
+                        },
+                        backgroundColor: '#002366',
+                        titleFont: { size: 16 },
+                        bodyFont: { size: 14 },
+                        padding: 10,
+                        cornerRadius: 5
+                    }
+                },
+                cutout: '60%'
+            }
+        });
+    </script>
+
+</body>
+</html>
